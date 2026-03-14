@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veloce Tech · services</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="text-logo">VELOCE<span class="logo-accent">TECH</span></a>
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <a href="#" class="btn btn-outline btn-small">Login</a>
+                    <a href="#" class="btn btn-primary btn-small">Start Project</a>
+                </div>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div class="page-wrap">
+        <!-- ABOUT SECTION -->
+        <div class="about-company">
+            <p>
+                <strong>Veloce Tech</strong> is a digital innovation studio specializing in website development, 
+                graphic design, and hybrid solutions. With a team of passionate designers and developers, 
+                we craft bespoke digital experiences that blend aesthetics with functionality. From custom 
+                websites and e‑commerce platforms to brand identities and print‑ready artwork, we deliver 
+                end‑to‑end solutions tailored to your business needs. Our collaborative approach ensures 
+                every project reflects your vision while engaging your audience. Explore our services below 
+                and discover how we can transform your digital presence.
+            </p>
+            <div class="signature">— since 2018 · global studio —</div>
+        </div>
+
+        <!-- CATEGORY 1: WEBSITE & DEVELOPMENT -->
+        <div class="category" id="cat-dev">
+            <div class="category-title">
+                <h2>🌐 website & development</h2>
+                <div class="category-tag">design · code · maintain</div>
+            </div>
+            <div class="service-grid" id="grid-dev">
+                <!-- card 1 -->
+                <div class="service-card" data-cat="dev" data-index="0" 
+                     data-title="Custom website design" 
+                     data-desc="We craft bespoke websites for businesses, schools, and corporations. Our process includes user research, wireframing, high-fidelity UI design, and responsive development. We focus on accessibility, conversion, and brand alignment."
+                     data-features="UX strategy|interactive prototypes|mobile-first|accessibility compliance" 
+                     data-imgclass="img-d1">
+                    <div class="card-image card-img-d1"></div>
+                    <h3>Custom website</h3>
+                    <div class="card-short">UI/UX, corporate, school sites</div>
+                    <div class="badge-group"><span class="badge">wireframes</span><span class="badge">Figma</span><span class="badge">prototype</span></div>
+                </div>
+                <!-- card 2 -->
+                <div class="service-card" data-cat="dev" data-index="1" 
+                     data-title="E‑commerce store design" 
+                     data-desc="We design high-converting online stores for platforms like Shopify, WooCommerce, and custom marketplaces. Our layouts prioritise product discovery, seamless cart flow, and trust signals to maximise sales."
+                     data-features="conversion‑centered|trust badges|upsell panels|mobile checkout" 
+                     data-imgclass="img-d2">
+                    <div class="card-image card-img-d2"></div>
+                    <h3>E‑commerce store</h3>
+                    <div class="card-short">marketplace, Shopify, cart</div>
+                    <div class="badge-group"><span class="badge">product pages</span><span class="badge">checkout</span><span class="badge">quick view</span></div>
+                </div>
+                <!-- card 3 -->
+                <div class="service-card" data-cat="dev" data-index="2" 
+                     data-title="Landing page layout" 
+                     data-desc="High-impact landing pages tailored for marketing campaigns, product launches, and lead generation. We combine persuasive copywriting with visual hierarchy to drive conversions and A/B test readiness."
+                     data-features="heatmap optimised|scroll animations|A/B ready|form integration" 
+                     data-imgclass="img-d3">
+                    <div class="card-image card-img-d3"></div>
+                    <h3>Landing page</h3>
+                    <div class="card-short">campaigns, lead gen, A/B</div>
+                    <div class="badge-group"><span class="badge">hero</span><span class="badge">forms</span><span class="badge">animation</span></div>
+                </div>
+                <!-- card 4 -->
+                <div class="service-card" data-cat="dev" data-index="3" 
+                     data-title="Front‑end + back‑end" 
+                     data-desc="Full‑stack development using modern frameworks (React, Vue, Django, Node). We build fast, secure, scalable web applications with custom APIs, database design, and cloud deployment."
+                     data-features="REST/GraphQL|JWT auth|cloud ready|serverless" 
+                     data-imgclass="img-d4">
+                    <div class="card-image card-img-d4"></div>
+                    <h3>Full‑stack dev</h3>
+                    <div class="card-short">HTML/CSS/JS, node, python</div>
+                    <div class="badge-group"><span class="badge">React</span><span class="badge">Django</span><span class="badge">APIs</span></div>
+                </div>
+                <!-- card 5 -->
+                <div class="service-card" data-cat="dev" data-index="4" 
+                     data-title="Maintenance & redesign" 
+                     data-desc="Ongoing website care: security patches, performance optimisation, content updates, and complete visual revamps. We also handle on‑page SEO, meta tags, and structure improvements to keep your site ranking."
+                     data-features="monthly reports|plugin updates|speed optimisation|SEO audit" 
+                     data-imgclass="img-d5">
+                    <div class="card-image card-img-d5"></div>
+                    <h3>Maintenance</h3>
+                    <div class="card-short">security, revamp, SEO</div>
+                    <div class="badge-group"><span class="badge">backups</span><span class="badge">meta tags</span><span class="badge">speed</span></div>
+                </div>
+                <!-- card 6 -->
+                <div class="service-card" data-cat="dev" data-index="5" 
+                     data-title="API & web app dev" 
+                     data-desc="Custom web applications like CRMs, dashboards, and internal tools. We integrate third‑party APIs (payment, maps, social) and build robust backends with secure authentication."
+                     data-features="payment gateways|maps integration|webhooks|OAuth" 
+                     data-imgclass="img-d6">
+                    <div class="card-image card-img-d6"></div>
+                    <h3>API & web apps</h3>
+                    <div class="card-short">CRM, integrations</div>
+                    <div class="badge-group"><span class="badge">REST</span><span class="badge">GraphQL</span><span class="badge">auth</span></div>
+                </div>
+            </div>
+            <!-- detail panel -->
+            <div class="detail-panel" id="detail-dev">
+                <div class="detail-content">
+                    <h4 id="detail-title-dev">Custom website design</h4>
+                    <div class="detail-desc" id="detail-desc-dev">We craft bespoke websites for businesses, schools, and corporations. Our process includes user research, wireframing, high-fidelity UI design, and responsive development. We focus on accessibility, conversion, and brand alignment.</div>
+                    <div class="detail-features" id="detail-features-dev"><span>UX strategy</span><span>interactive prototypes</span><span>mobile-first</span><span>accessibility compliance</span></div>
+                </div>
+                <div class="detail-image img-d1" id="detail-image-dev"></div>
+            </div>
+        </div>
+
+        <!-- CATEGORY 2: GRAPHIC DESIGN -->
+        <div class="category" id="cat-graphic">
+            <div class="category-title">
+                <h2>🎨 graphic design</h2>
+                <div class="category-tag">brand · digital · print</div>
+            </div>
+            <div class="service-grid" id="grid-graphic">
+                <!-- cards 7-10 -->
+                <div class="service-card" data-cat="graphic" data-index="0" data-title="Logo & brand identity" data-desc="We create distinctive logos and complete brand identity systems: color palettes, typography, stationery (letterheads, business cards), and comprehensive brand guidelines delivered in vector formats." data-features="icon set|monogram|brand PDF|stationery templates" data-imgclass="img-d7"><div class="card-image card-img-d7"></div><h3>Logo & identity</h3><div class="card-short">style guide, stationery</div><div class="badge-group"><span class="badge">AI/PSD</span><span class="badge">brand PDF</span><span class="badge">vector</span></div></div>
+                <div class="service-card" data-cat="graphic" data-index="1" data-title="Social & digital creatives" data-desc="Eye-catching graphics for Instagram, Facebook, LinkedIn, YouTube thumbnails, email banners, and digital ads. We design for engagement, platform specs, and brand consistency." data-features="animated stories|carousel posts|thumbnail design|ad banners" data-imgclass="img-d8"><div class="card-image card-img-d8"></div><h3>Social & digital</h3><div class="card-short">instagram, email, ads</div><div class="badge-group"><span class="badge">posts</span><span class="badge">stories</span><span class="badge">thumbnails</span></div></div>
+                <div class="service-card" data-cat="graphic" data-index="2" data-title="Publication & info design" data-desc="Professional layout design for certificates, annual reports, e‑books, infographics, and company profiles. We turn complex data into clear, visually compelling stories, delivered as print‑ready PDFs." data-features="editorial design|data visualization|multi‑page layout|charts" data-imgclass="img-d9"><div class="card-image card-img-d9"></div><h3>Publication</h3><div class="card-short">infographic, e‑book</div><div class="badge-group"><span class="badge">InDesign</span><span class="badge">data viz</span><span class="badge">reports</span></div></div>
+                <div class="service-card" data-cat="graphic" data-index="3" data-title="Print‑ready artwork" data-desc="High‑resolution artwork for flyers, posters, billboards, packaging, and merchandise. We prepare files with bleeds, color separations (CMYK), and die‑cut lines, ready for commercial printing." data-features="t‑shirt designs|box mockups|large format|spot UV" data-imgclass="img-d10"><div class="card-image card-img-d10"></div><h3>Print artwork</h3><div class="card-short">flyers, packaging, merch</div><div class="badge-group"><span class="badge">CMYK</span><span class="badge">die‑cut</span><span class="badge">merch</span></div></div>
+            </div>
+            <div class="detail-panel" id="detail-graphic">
+                <div class="detail-content">
+                    <h4 id="detail-title-graphic">Logo & brand identity</h4>
+                    <div class="detail-desc" id="detail-desc-graphic">We create distinctive logos and complete brand identity systems: color palettes, typography, stationery (letterheads, business cards), and comprehensive brand guidelines delivered in vector formats.</div>
+                    <div class="detail-features" id="detail-features-graphic"><span>icon set</span><span>monogram</span><span>brand PDF</span><span>stationery templates</span></div>
+                </div>
+                <div class="detail-image img-d7" id="detail-image-graphic"></div>
+            </div>
+        </div>
+
+        <!-- CATEGORY 3: HYBRID -->
+        <div class="category" id="cat-hybrid">
+            <div class="category-title">
+                <h2>⚡ hybrid</h2>
+                <div class="category-tag">design + code · email · ui/ux</div>
+            </div>
+            <div class="service-grid" id="grid-hybrid">
+                <!-- cards 11-13 -->
+                <div class="service-card" data-cat="hybrid" data-index="0" data-title="HTML email signature" data-desc="Fully responsive HTML email signatures that look perfect on Outlook, Gmail, Apple Mail, and mobile. We include social icons, banners, and clickable links, tested across 20+ clients." data-features="retina ready|compatible|lightweight|tested on 20+ clients" data-imgclass="img-d11"><div class="card-image card-img-d11"></div><h3>Email signature</h3><div class="card-short">outlook, gmail, icons</div><div class="badge-group"><span class="badge">tables</span><span class="badge">inline css</span><span class="badge">tested</span></div></div>
+                <div class="service-card" data-cat="hybrid" data-index="1" data-title="HTML email template" data-desc="Custom‑coded email templates for newsletters, promotions, and transactional emails. We ensure compatibility with major email clients, dark mode support, and spam‑tested code." data-features="spam‑fit|dark mode|litmus tested|responsive" data-imgclass="img-d12"><div class="card-image card-img-d12"></div><h3>Email template</h3><div class="card-short">campaign, responsive</div><div class="badge-group"><span class="badge">mjml</span><span class="badge">litmus</span><span class="badge">dark mode</span></div></div>
+                <div class="service-card" data-cat="hybrid" data-index="2" data-title="UI/UX + front‑end" data-desc="From Figma/XD mockups to pixel‑perfect HTML/CSS/JS. We deliver interactive, accessible interfaces with smooth animations and component libraries, ready for any CMS or static host." data-features="GSAP|responsive|component lib|Figma dev" data-imgclass="img-d1"><div class="card-image card-img-d1"></div><h3>UI/UX + frontend</h3><div class="card-short">design + code, Figma</div><div class="badge-group"><span class="badge">tailwind</span><span class="badge">Figma dev</span><span class="badge">GSAP</span></div></div>
+            </div>
+            <div class="detail-panel" id="detail-hybrid">
+                <div class="detail-content">
+                    <h4 id="detail-title-hybrid">HTML email signature</h4>
+                    <div class="detail-desc" id="detail-desc-hybrid">Fully responsive HTML email signatures that look perfect on Outlook, Gmail, Apple Mail, and mobile. We include social icons, banners, and clickable links, tested across 20+ clients.</div>
+                    <div class="detail-features" id="detail-features-hybrid"><span>retina ready</span><span>compatible</span><span>lightweight</span><span>tested on 20+ clients</span></div>
+                </div>
+                <div class="detail-image img-d11" id="detail-image-hybrid"></div>
+            </div>
+        </div>
+
+        <!-- progress row -->
+        <div class="progress-row">
+            <span><i class="fas fa-circle" style="color: #C73D2B; font-size: 6px;"></i> logo design done</span>
+            <span><i class="fas fa-circle" style="color: #C73D2B; font-size: 6px;"></i> website layout progress</span>
+            <span><i class="fas fa-circle" style="color: #C73D2B; font-size: 6px;"></i> AI assisted layout</span>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="text-logo" style="font-size: 1.3rem;">VELOCE<span class="logo-accent">TECH</span></a>
+                    <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Nairobi · Narok · London</span></div>
+                    <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>hello@veloce.tech</span></div>
+                    <div class="footer-contact-item"><i class="fas fa-phone"></i><span>+254 20 765 4321</span></div>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links"><li><a href="services.html">Web Dev</a></li><li><a href="services.html">Graphic Design</a></li><li><a href="services.html">Hybrid</a></li><li><a href="services.html">E-commerce</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links"><li><a href="#">About</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="#">Blog</a></li><li><a href="#">Careers</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul class="footer-links"><li><a href="#">FAQ</a></li><li><a href="#">Support</a></li><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li></ul>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>© 2026 Veloce Tech. All rights reserved.</p></div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP ICON -->
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+    <!-- Shared JavaScript -->
+    <script src="script.js" defer></script>
+</body>
+</html>
