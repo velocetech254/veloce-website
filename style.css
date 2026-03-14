@@ -511,12 +511,14 @@ body {
     margin-bottom: 10px;
 }
 
-/* ========== FOOTER ========== */
+/* ========== FOOTER - Compact Version ========== */
+/* ========== FOOTER - Compact Version ========== */
+/* ========== FOOTER - Compact Version ========== */
 .footer {
     background-color: #1a2634;
     color: rgba(255,255,255,0.7);
-    padding: 20px 0 12px;
-    font-size: 10px;
+    padding: 15px 0 8px;        /* reduced from 20px 0 12px */
+    font-size: 9px;              /* slightly smaller base */
     margin-top: 30px;
 }
 
@@ -529,13 +531,13 @@ body {
 .footer-grid {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
-    gap: 12px;
-    margin-bottom: 12px;
+    gap: 8px;                    /* reduced from 12px */
+    margin-bottom: 8px;           /* reduced from 12px */
 }
 
 .footer-col .text-logo {
-    font-size: 1.3rem;
-    margin-bottom: 6px;
+    font-size: 1.1rem;            /* reduced from 1.3rem */
+    margin-bottom: 4px;           /* reduced from 6px */
     display: inline-block;
     background: linear-gradient(135deg, #fff, var(--brand-primary));
     -webkit-background-clip: text;
@@ -545,9 +547,9 @@ body {
 .footer-col h4 {
     color: white;
     font-family: 'Poppins', sans-serif;
-    font-size: 11px;
+    font-size: 10px;              /* reduced from 11px */
     font-weight: 600;
-    margin-bottom: 6px;
+    margin-bottom: 4px;           /* reduced from 6px */
     letter-spacing: 0.5px;
 }
 
@@ -556,12 +558,12 @@ body {
 }
 
 .footer-links li {
-    margin-bottom: 3px;
+    margin-bottom: 2px;            /* reduced from 3px */
 }
 
 .footer-links a {
     color: rgba(255,255,255,0.6);
-    font-size: 10px;
+    font-size: 9px;                /* reduced from 10px */
     text-decoration: none;
     transition: color 0.2s;
 }
@@ -573,25 +575,24 @@ body {
 .footer-contact-item {
     display: flex;
     align-items: center;
-    gap: 5px;
-    margin-bottom: 4px;
-    font-size: 10px;
+    gap: 4px;                      /* reduced from 5px */
+    margin-bottom: 3px;             /* reduced from 4px */
+    font-size: 9px;                 /* reduced from 10px */
 }
 
 .footer-contact-item i {
     color: var(--brand-primary);
-    font-size: 9px;
+    font-size: 8px;                 /* reduced from 9px */
     width: 12px;
 }
 
 .footer-bottom {
     text-align: center;
-    padding-top: 8px;
+    padding-top: 6px;                /* reduced from 8px */
     border-top: 1px solid rgba(255,255,255,0.08);
-    font-size: 9px;
+    font-size: 8px;                  /* reduced from 9px */
     opacity: 0.5;
 }
-
 /* ========== WHATSAPP FLOAT ========== */
 .whatsapp-float {
     position: fixed;
@@ -661,6 +662,7 @@ body {
     align-items: baseline;
     gap: 1rem;
     margin-bottom: 1.2rem;
+    flex-wrap: wrap;
 }
 
 .category-title h2 {
@@ -683,6 +685,7 @@ body {
     padding: 0.2rem 1.4rem;
     border-radius: 30px;
     border: 1px solid var(--border-light);
+    white-space: nowrap;
 }
 
 .service-grid {
@@ -1128,7 +1131,22 @@ body {
     margin-right: 0.3rem;
 }
 
-/* ========== RESPONSIVE ========== */
+/* ========== RESPONSIVE DESIGN (ENHANCED) ========== */
+
+/* Tablet and below */
+@media (max-width: 1024px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    .main-categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile breakpoint */
 @media (max-width: 900px) {
     .navbar {
         position: relative;
@@ -1143,11 +1161,12 @@ body {
         width: 100%;
         background-color: white;
         flex-direction: column;
-        padding: 15px;
-        gap: 15px;
+        padding: 20px;
+        gap: 20px;
         box-shadow: 0 10px 20px rgba(0,0,0,0.05);
         border-top: 1px solid var(--border-light);
         display: none;
+        z-index: 999;
     }
     .nav-menu.active {
         display: flex;
@@ -1155,25 +1174,65 @@ body {
     .nav-links {
         flex-direction: column;
         align-items: center;
-        gap: 12px;
+        gap: 15px;
+    }
+    .nav-links a {
+        font-size: 14px;
     }
     .nav-buttons {
         width: 100%;
         justify-content: center;
     }
 
-    .hero-grid,
-    .contact-grid,
-    .map-grid {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .hero-content {
+        max-width: 100%;
+        text-align: center;
+    }
+    .hero-buttons {
+        justify-content: center;
+    }
+    .hero-stats {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .progress-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .progress-item {
+        justify-content: center;
+    }
+
+    .stats-bar {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .main-categories {
         grid-template-columns: 1fr;
     }
 
-    .progress-grid,
-    .stats-bar,
-    .main-categories,
-    .portfolio-grid,
-    .branch-grid {
+    .portfolio-grid {
         grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .footer-col .text-logo {
+        margin-bottom: 10px;
+    }
+    .footer-contact-item {
+        justify-content: center;
     }
 
     .whatsapp-float {
@@ -1183,11 +1242,103 @@ body {
         height: 50px;
         font-size: 28px;
     }
+
+    /* Services page */
+    .category-title {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    .category-tag {
+        white-space: normal;
+    }
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+    .detail-panel {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1.5rem;
+    }
+    .detail-features {
+        justify-content: center;
+    }
+    .detail-image {
+        width: 100%;
+        max-width: 200px;
+        height: 120px;
+    }
+
+    /* Contact page */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    .branch-grid {
+        grid-template-columns: 1fr;
+    }
+    .map-grid {
+        grid-template-columns: 1fr;
+    }
+    .map-embed {
+        height: 200px;
+    }
+
+    .about-company {
+        padding: 1.5rem;
+    }
+    .about-company p {
+        font-size: 0.95rem;
+    }
 }
 
-@media (max-width: 600px) {
-    .text-logo { font-size: 1.5rem; }
-    .footer-grid { grid-template-columns: 1fr; }
-    .page-header h1 { font-size: 2rem; }
-    .about-company { padding: 1.5rem; }
+/* Small phones */
+@media (max-width: 480px) {
+    .text-logo {
+        font-size: 1.5rem;
+    }
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    .hero-pre {
+        font-size: 10px;
+    }
+    .hero-description {
+        font-size: 12px;
+    }
+    .hero-stats {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .stats-bar {
+        grid-template-columns: 1fr;
+    }
+    .stat-number {
+        font-size: 1.4rem;
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .contact-form, .contact-info {
+        padding: 1.5rem;
+    }
+
+    .branch-item {
+        padding: 1rem;
+    }
+
+    .map-embed {
+        height: 180px;
+    }
+
+    .whatsapp-float {
+        bottom: 15px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+        font-size: 24px;
+    }
 }
