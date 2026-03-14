@@ -12,8 +12,66 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Shared CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Page-specific adjustments for compactness -->
+    <style>
+        /* Tighter spacing for contact page only */
+        .contact-page .page-wrap {
+            padding: 1rem 1rem 1.5rem 1rem;
+        }
+        .contact-page .page-header {
+            margin-bottom: 1.2rem;
+        }
+        .contact-page .contact-grid {
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .contact-page .contact-info,
+        .contact-page .contact-form {
+            padding: 1.2rem;
+        }
+        .contact-page .branch-grid {
+            gap: 0.8rem;
+            margin-bottom: 1rem;
+        }
+        .contact-page .branch-item {
+            padding: 0.8rem;
+        }
+        .contact-page .email-common {
+            padding: 0.8rem;
+            margin-top: 0.5rem;
+        }
+        .contact-page .social-links {
+            margin-top: 1rem;
+        }
+        .contact-page .map-container {
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .contact-page .map-grid {
+            gap: 1rem;
+        }
+        .contact-page .map-embed {
+            height: 200px;
+        }
+        /* Additional descriptive text styling */
+        .contact-page .response-note {
+            font-size: 0.9rem;
+            color: var(--brand-primary);
+            text-align: center;
+            margin: 0.5rem 0 1rem;
+            font-weight: 500;
+        }
+        .contact-page .info-note {
+            font-size: 0.85rem;
+            color: #5e768b;
+            margin-top: 0.8rem;
+            text-align: center;
+            border-top: 1px dashed var(--border-light);
+            padding-top: 0.8rem;
+        }
+    </style>
 </head>
-<body>
+<body class="contact-page">
     <!-- HEADER -->
     <header class="header">
         <nav class="navbar">
@@ -38,17 +96,25 @@
         </nav>
     </header>
 
-    <!-- MAIN CONTENT -->
+    <!-- MAIN CONTENT (compressed) -->
     <div class="page-wrap">
         <div class="page-header">
             <h1>get in touch</h1>
             <div class="sub">we have offices in Nairobi and Narok — reach out anytime</div>
+            <!-- Added descriptive sentence -->
+            <div class="response-note">
+                <i class="fas fa-clock" style="margin-right: 5px;"></i> We typically respond within 24 hours.
+            </div>
         </div>
 
         <div class="contact-grid">
             <!-- LEFT: CONTACT INFO -->
             <div class="contact-info">
                 <h2>our locations</h2>
+                <!-- Added brief intro -->
+                <p style="font-size: 0.9rem; margin-bottom: 1rem; color: #5e768b;">
+                    Visit us at either of our offices or get in touch via phone or email.
+                </p>
                 <div class="branch-grid">
                     <!-- Nairobi -->
                     <div class="branch-item">
@@ -73,6 +139,11 @@
                         </div>
                     </div>
                 </div>
+                <!-- Added extra sentence -->
+                <div class="info-note">
+                    <i class="fas fa-star" style="color: var(--brand-primary);"></i>
+                    For urgent inquiries, please mention your preferred location.
+                </div>
                 <!-- Social links -->
                 <div class="social-links">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -86,6 +157,10 @@
             <!-- RIGHT: CONTACT FORM -->
             <div class="contact-form">
                 <h2>send us a message</h2>
+                <!-- Added encouraging sentence -->
+                <p style="font-size: 0.85rem; margin-bottom: 1rem; color: #5e768b;">
+                    Whether it's a project idea or a simple hello — we'd love to hear from you.
+                </p>
                 <form action="#" method="post">
                     <div class="form-group">
                         <label for="name">full name</label>
@@ -127,26 +202,45 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
+                <!-- Column 1: Brand & Contact -->
                 <div class="footer-col">
-                    <a href="index.html" class="text-logo" style="font-size: 1.3rem;">VELOCE<span class="logo-accent">TECH</span></a>
-                    <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Nairobi · Narok · London</span></div>
-                    <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>hello@veloce.tech</span></div>
-                    <div class="footer-contact-item"><i class="fas fa-phone"></i><span>+254 20 765 4321</span></div>
+                    <a href="index.html" class="text-logo" style="font-size: 1.2rem;">VELOCE<span class="logo-accent">TECH</span></a>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@veloce.tech</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+254 20 765 4321</span>
+                    </div>
                 </div>
+
+                <!-- Column 2: Services (compact) -->
                 <div class="footer-col">
                     <h4>Services</h4>
-                    <ul class="footer-links"><li><a href="services.html">Web Dev</a></li><li><a href="services.html">Graphic Design</a></li><li><a href="services.html">Hybrid</a></li><li><a href="services.html">E-commerce</a></li></ul>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Web Dev</a></li>
+                        <li><a href="services.html">Graphic Design</a></li>
+                        <li><a href="services.html">Hybrid</a></li>
+                        <li><a href="services.html">E‑commerce</a></li>
+                    </ul>
                 </div>
+
+                <!-- Column 3: Company (essential links) -->
                 <div class="footer-col">
                     <h4>Company</h4>
-                    <ul class="footer-links"><li><a href="#">About</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="#">Blog</a></li><li><a href="#">Careers</a></li></ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Support</h4>
-                    <ul class="footer-links"><li><a href="#">FAQ</a></li><li><a href="#">Support</a></li><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li></ul>
+                    <ul class="footer-links">
+                        <li><a href="#">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="footer-bottom"><p>© 2026 Veloce Tech. All rights reserved.</p></div>
+
+            <!-- Simple copyright line -->
+            <div class="footer-bottom">
+                <p>© 2026 Veloce Tech. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
